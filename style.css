@@ -1,0 +1,46 @@
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    color: #313d5aff;
+    background: url('/green-snake-game-0bcwwv8hzy7tlyd7.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+#gameContainer {
+    position: relative;
+    width: 400px; 
+    height: 400px; 
+    background: rgba(0, 0, 0, 0.5); 
+    border: 15px solid black; 
+    border-radius: 15px; 
+    box-shadow: none; 
+}
+
+canvas {
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+}
+
+#gameOver {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+    z-index: 1; 
+}
+
+#finalScore {
+    display: block;
+    margin-top: 20px;
+}
